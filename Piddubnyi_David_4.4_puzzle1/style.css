@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+}
+
+.header, .footer {
+  background-color: #e0e0e0;
+  padding: 50px;
+  width: 400px;
+}
+
+.puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;  /* When it's less or 0, the picture is terrible.r */
+}
+
+.puzzle-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
